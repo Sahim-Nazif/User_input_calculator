@@ -40,11 +40,21 @@ public class CalculatorInput {
 			   throw new IllegalArgumentException("First digit can not be less then second digit !");
 		   int div=istNum/secNum;
 		   System.out.printf("The division result is %d\n" ,div);
+		}else if (choice.equalsIgnoreCase("mul")) {
+			System.out.println("Enter first number :");
+			int istNum=input.nextInt(); 
+			System.out.println("Enter second number:");
+			int secNum=input.nextInt();
+			int mul=istNum *secNum;
+		   System.out.printf("The multipication result is %d\n" ,mul);
+		} else if (choice.equalsIgnoreCase("exit")) {
+			System.out.println("Thanks for using the application");
+			break;
+		} else {
+			System.out.println("Invalid entry !\n");
 		}
-	}
+	 }
 	
-	
-
-	}
+  }
 
 }
