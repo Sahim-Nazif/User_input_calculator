@@ -27,10 +27,19 @@ public class CalculatorInput {
 			System.out.println("Enter second number:");
 			int secNum=input.nextInt();
 			if (istNum<secNum) 
-				throw new IllegalArgumentException("First digit can not be less then second digit !");
-			
+			   throw new IllegalArgumentException("First digit can not be less then second digit !");
 		   int sub=istNum-secNum;
 		   System.out.printf("The subtraction result is %d\n" ,sub);
+		}
+		else if (choice.equalsIgnoreCase("div")) {
+			System.out.println("Enter first number :");
+			int istNum=input.nextInt(); 
+			System.out.println("Enter second number:");
+			int secNum=input.nextInt();
+			if (istNum<secNum) 
+			   throw new IllegalArgumentException("First digit can not be less then second digit !");
+		   int div=istNum/secNum;
+		   System.out.printf("The division result is %d\n" ,div);
 		}
 	}
 	
