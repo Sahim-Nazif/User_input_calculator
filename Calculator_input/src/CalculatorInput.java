@@ -21,6 +21,16 @@ public class CalculatorInput {
 			int secNum=input.nextInt();
 		   int add=istNum+secNum;
 		   System.out.printf("The sum is %d\n",add);
+		} else if (choice.equalsIgnoreCase("sub")) {
+			System.out.println("Enter first number :");
+			int istNum=input.nextInt(); 
+			System.out.println("Enter second number:");
+			int secNum=input.nextInt();
+			if (istNum<secNum) 
+				throw new IllegalArgumentException("First digit can not be less then second digit !");
+			
+		   int sub=istNum-secNum;
+		   System.out.printf("The subtraction result is %d\n" ,sub);
 		}
 	}
 	
